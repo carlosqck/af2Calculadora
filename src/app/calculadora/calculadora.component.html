@@ -1,0 +1,71 @@
+<h2 class="text-center mt-2 mb-2">Calculadora</h2>
+
+<div class="calculadora container bg-light p-4 rounded shadow-sm mb-4">
+  <input type="text" [value]="display" readonly class="form-control text-right mb-3 shadow-sm estilo" />
+
+  <div class="row">
+    <div class="col-3">
+      <button class="btn btn-danger w-100 py-3" (click)="calcLimpar()">C</button>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-secondary w-100 py-3" (click)="calcInput('/')">/</button>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-secondary w-100 py-3" (click)="calcInput('*')">*</button>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-secondary w-100 py-3" (click)="calcInput('-')">-</button>
+    </div>
+  </div>
+
+  <div class="row mt-2">
+    <div class="col-3">
+      <button class="btn btn-dark w-100 py-3" (click)="calcInput('7')">7</button>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-dark w-100 py-3" (click)="calcInput('8')">8</button>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-dark w-100 py-3" (click)="calcInput('9')">9</button>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-secondary w-100 py-3" (click)="calcInput('+')">+</button>
+    </div>
+  </div>
+
+  <div class="row mt-2">
+    <div class="col-3">
+      <button class="btn btn-dark w-100 py-3" (click)="calcInput('4')">4</button>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-dark w-100 py-3" (click)="calcInput('5')">5</button>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-dark w-100 py-3" (click)="calcInput('6')">6</button>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-primary w-100 py-3" (click)="calcResultado()">=</button>
+    </div>
+  </div>
+
+  <div class="row mt-2">
+    <div class="col-3">
+      <button class="btn btn-dark w-100 py-3" (click)="calcInput('1')">1</button>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-dark w-100 py-3" (click)="calcInput('2')">2</button>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-dark w-100 py-3" (click)="calcInput('3')">3</button>
+    </div>
+  </div>
+
+  <div class="row mt-2">
+    <div class="col-6">
+      <button class="btn btn-dark w-100 py-3" (click)="calcInput('0')">0</button>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-secondary w-100 py-3" (click)="calcInput('.')">.</button>
+    </div>
+  </div>
+</div>
